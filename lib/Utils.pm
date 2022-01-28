@@ -27,6 +27,9 @@ sub get_benchmark_runners
 			$form->process(params => $data);
 			die unless $form->validated;
 		},
+		BenchJsonSchemaTiny => sub {
+			die unless BenchJsonSchemaTiny->validate($data)->{valid};
+		},
 		BenchValidateTiny => sub {
 			my $form = BenchValidateTiny->new;
 			die unless $form->valid($data)->{success};

@@ -30,6 +30,7 @@ sub participants
 		BenchDataMuForm
 		BenchFormTiny
 		BenchHtmlFormHandler
+		BenchJsonSchemaTiny
 		BenchValiant
 		BenchValidateTiny
 	);
