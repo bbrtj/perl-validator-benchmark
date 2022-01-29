@@ -9,7 +9,7 @@ has 'a' => (
 
 validates a => (
 	presence => 1,
-	scalar => 1
+	scalar => 1,
 	with => sub {
 		my ($self, $attribute_name, $value, $opts) = @_;
 		$self->errors->add($attribute_name, 'must be short')
