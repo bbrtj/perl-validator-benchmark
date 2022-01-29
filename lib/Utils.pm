@@ -46,7 +46,9 @@ sub get_benchmark_runners
 		die "unknown benchmark class: $class"
 			unless exists $runners{$class};
 
-		eval "require $class";
+		my $res = eval "require $class; 1;";
+		die "error loading $class" unless $res;
+
 		$out{$class =~ s/^Bench//r} = $runners{$class};
 	}
 
