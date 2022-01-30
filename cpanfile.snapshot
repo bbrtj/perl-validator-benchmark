@@ -4000,6 +4000,24 @@ DISTRIBUTIONS
       List::MoreUtils 0
       strict 0
       warnings 0
+  Validator-LIVR-2.0
+    pathname: K/KO/KOORCHIK/Validator-LIVR-2.0.tar.gz
+    provides:
+      Validator::LIVR 2.0
+      Validator::LIVR::Rules::Common 2.0
+      Validator::LIVR::Rules::Meta 2.0
+      Validator::LIVR::Rules::Modifiers 2.0
+      Validator::LIVR::Rules::Numeric 2.0
+      Validator::LIVR::Rules::Special 2.0
+      Validator::LIVR::Rules::String 2.0
+    requirements:
+      Email::Valid 0
+      ExtUtils::MakeMaker 0
+      JSON 0
+      Regexp::Common 0
+      Test::Exception 0
+      Test::More 0
+      perl 5.010
   Variable-Magic-0.62
     pathname: V/VP/VPIT/Variable-Magic-0.62.tar.gz
     provides:

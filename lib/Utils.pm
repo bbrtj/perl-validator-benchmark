@@ -39,6 +39,10 @@ sub get_benchmark_runners
 			$form->validate;
 			die unless $form->valid;
 		},
+		BenchValidatorLivr => sub {
+			my $form = BenchValidatorLivr->new;
+			die unless $form->validate($data);
+		},
 	);
 
 	my %out;

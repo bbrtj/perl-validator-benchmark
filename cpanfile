@@ -5,6 +5,7 @@ requires 'Valiant';
 requires 'Validate::Tiny';
 requires 'HTML::FormHandler';
 requires 'JSON::Schema::Tiny';
+requires 'Validator::LIVR';
 
 requires 'Type::Tiny::XS';
 requires 'Ref::Util::XS';

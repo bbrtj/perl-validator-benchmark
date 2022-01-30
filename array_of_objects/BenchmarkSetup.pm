@@ -33,6 +33,7 @@ sub participants
 		BenchJsonSchemaTiny
 		BenchValiant
 		BenchValidateTiny
+		BenchValidatorLivr
 	);
 }
 
