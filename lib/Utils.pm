@@ -30,6 +30,10 @@ sub get_benchmark_runners
 		BenchJsonSchemaTiny => sub {
 			die unless BenchJsonSchemaTiny->validate($data)->{valid};
 		},
+		BenchJsonSchemaModern => sub {
+			my $form = BenchJsonSchemaModern->new;
+			die unless $form->validate($data);
+		},
 		BenchValidateTiny => sub {
 			my $form = BenchValidateTiny->new;
 			die unless $form->valid($data)->{success};

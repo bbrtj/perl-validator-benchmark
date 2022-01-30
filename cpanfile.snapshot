@@ -1969,6 +1969,63 @@ DISTRIBUTIONS
       JSON::PP 2.27300
       Scalar::Util 0
       perl 5.006
+  JSON-Schema-Modern-0.542
+    pathname: E/ET/ETHER/JSON-Schema-Modern-0.542.tar.gz
+    provides:
+      JSON::Schema::Modern 0.542
+      JSON::Schema::Modern::Annotation 0.542
+      JSON::Schema::Modern::Document 0.542
+      JSON::Schema::Modern::Error 0.542
+      JSON::Schema::Modern::Result 0.542
+      JSON::Schema::Modern::Utilities 0.542
+      JSON::Schema::Modern::Vocabulary 0.542
+      JSON::Schema::Modern::Vocabulary::Applicator 0.542
+      JSON::Schema::Modern::Vocabulary::Content 0.542
+      JSON::Schema::Modern::Vocabulary::Core 0.542
+      JSON::Schema::Modern::Vocabulary::FormatAnnotation 0.542
+      JSON::Schema::Modern::Vocabulary::FormatAssertion 0.542
+      JSON::Schema::Modern::Vocabulary::MetaData 0.542
+      JSON::Schema::Modern::Vocabulary::Unevaluated 0.542
+      JSON::Schema::Modern::Vocabulary::Validation 0.542
+    requirements:
+      B 0
+      Carp 0
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      Feature::Compat::Try 0
+      File::ShareDir 0
+      File::ShareDir::Install 0.06
+      Getopt::Long::Descriptive 0
+      JSON::MaybeXS 1.004001
+      JSON::PP 0
+      List::Util 1.55
+      MIME::Base64 0
+      Module::Build::Tiny 0.034
+      Module::Runtime 0
+      Mojo::JSON::Pointer 0
+      Mojo::URL 0
+      Mojolicious 7.23
+      Moo 0
+      Moo::Role 0
+      MooX::HandlesVia 0
+      MooX::TypeTiny 0.002002
+      Path::Tiny 0
+      Ref::Util 0.100
+      Safe::Isa 1.000008
+      Scalar::Util 0
+      Storable 0
+      Sub::Install 0
+      Types::Standard 1.010002
+      constant 0
+      experimental 0
+      if 0
+      namespace::clean 0
+      open 0
+      overload 0
+      perl v5.20.0
+      strict 0
+      strictures 2
+      warnings 0
   JSON-Schema-Tiny-0.014
     pathname: E/ET/ETHER/JSON-Schema-Tiny-0.014.tar.gz
     provides:
@@ -2401,6 +2458,31 @@ DISTRIBUTIONS
       Moo 1.001
       perl 5.006
       strictures 1
+  MooX-HandlesVia-0.001009
+    pathname: T/TO/TOBYINK/MooX-HandlesVia-0.001009.tar.gz
+    provides:
+      Data::Perl::Bool::MooseLike 0.001009
+      Data::Perl::Collection::Array::MooseLike 0.001009
+      Data::Perl::Collection::Hash::MooseLike 0.001009
+      Data::Perl::Number::MooseLike 0.001009
+      Data::Perl::String::MooseLike 0.001009
+      MooX::HandlesVia 0.001009
+    requirements:
+      Class::Method::Modifiers 0
+      Data::Perl 0.002006
+      ExtUtils::MakeMaker 0
+      Module::Runtime 0
+      Moo 1.003000
+      Role::Tiny 0
+  MooX-TypeTiny-0.002003
+    pathname: H/HA/HAARG/MooX-TypeTiny-0.002003.tar.gz
+    provides:
+      MooX::TypeTiny 0.002003
+      MooX::TypeTiny::Role::GenerateAccessor undef
+    requirements:
+      ExtUtils::MakeMaker 0
+      Moo 2.004
+      Type::Tiny 1.008
   MooX-Types-MooseLike-0.29
     pathname: M/MA/MATEU/MooX-Types-MooseLike-0.29.tar.gz
     provides:
@@ -3258,6 +3340,32 @@ DISTRIBUTIONS
       overload 0
       parent 0
       strict 0
+  Path-Tiny-0.122
+    pathname: D/DA/DAGOLDEN/Path-Tiny-0.122.tar.gz
+    provides:
+      Path::Tiny 0.122
+      Path::Tiny::Error 0.122
+    requirements:
+      Carp 0
+      Cwd 0
+      Digest 1.03
+      Digest::SHA 5.45
+      Encode 0
+      Exporter 5.57
+      ExtUtils::MakeMaker 6.17
+      Fcntl 0
+      File::Copy 0
+      File::Glob 0
+      File::Path 2.07
+      File::Spec 0.86
+      File::Temp 0.19
+      File::stat 0
+      constant 0
+      overload 0
+      perl 5.008001
+      strict 0
+      warnings 0
+      warnings::register 0
   Ref-Util-0.204
     pathname: A/AR/ARC/Ref-Util-0.204.tar.gz
     provides:
@@ -3375,6 +3483,15 @@ DISTRIBUTIONS
       Test::More 0.88
       Test::Warn 0
       Text::Balanced 2.00
+      perl 5.006
+  Safe-Isa-1.000010
+    pathname: E/ET/ETHER/Safe-Isa-1.000010.tar.gz
+    provides:
+      Safe::Isa 1.000010
+    requirements:
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      Scalar::Util 0
       perl 5.006
   Scalar-List-Utils-1.60
     pathname: P/PE/PEVANS/Scalar-List-Utils-1.60.tar.gz
