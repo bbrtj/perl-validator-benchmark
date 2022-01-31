@@ -19,6 +19,7 @@ extends 'Form::Toolkit::Form';
 sub build_fields {
 	my ($self) = @_;
 	$self->add_field('String', 'a')
+		->add_role('Mandatory')
 		->add_role('IsShort');
 }
 
