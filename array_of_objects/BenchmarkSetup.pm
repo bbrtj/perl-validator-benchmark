@@ -29,6 +29,7 @@ sub participants
 	return qw(
 		BenchDataMuForm
 		BenchFormTiny
+		BenchFormToolkit
 		BenchHtmlFormHandler
 		BenchJsonSchemaTiny
 		BenchJsonSchemaModern
