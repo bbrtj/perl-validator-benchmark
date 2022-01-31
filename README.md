@@ -25,14 +25,6 @@ We pass five fields `a`, `b`, `c`, `d`, `e`, all of which are required and strin
 
 *Rationale*: we can compare results of the previous single_field validator and see how having multiple rules affects validator's performance. A big drop in validation speed can indicate a poorly optimized system.
 
-### custom_validator
-
-We pass a single field `a`, which is a string value and must be shorter than 64 characters.
-
-*Rationale*: since a code reference check based on length should have the same execution time no matter which validator runs it, we can measure how well validators fare with extending them with custom code.
-
-*Note*: this benchmark is reserved for validators that can use a perl code reference to validate input. Preconfigured validators that check for string length are not allowed.
-
 ### array_of_objects
 
 We pass a single field `a`, which is an array reference of hash references. There are 100 nested hashes in total. Each hash contains keys `b` - a number, and `c` - a string.
