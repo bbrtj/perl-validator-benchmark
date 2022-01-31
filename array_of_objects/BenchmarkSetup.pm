@@ -28,6 +28,7 @@ sub participants
 {
 	return qw(
 		BenchDataMuForm
+		BenchDataSah
 		BenchFormTiny
 		BenchFormToolkit
 		BenchHtmlFormHandler

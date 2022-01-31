@@ -22,6 +22,9 @@ sub get_benchmark_runners
 			my $form = BenchDataMuForm->new;
 			die unless $form->check(data => $data);
 		},
+		BenchDataSah => sub {
+			die unless BenchDataSah->validate($data);
+		},
 		BenchHtmlFormHandler => sub {
 			my $form = BenchHtmlFormHandler->new;
 			$form->process(params => $data);

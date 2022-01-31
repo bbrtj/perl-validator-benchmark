@@ -38,6 +38,34 @@ DISTRIBUTIONS
       perl 5.008001
       strict 0
       warnings 0
+  B-Hooks-Parser-0.21
+    pathname: E/ET/ETHER/B-Hooks-Parser-0.21.tar.gz
+    provides:
+      B::Hooks::Parser 0.21
+    requirements:
+      B::Hooks::OP::Check 0.18
+      DynaLoader 0
+      ExtUtils::Depends 0.302
+      ExtUtils::MakeMaker 0
+      parent 0
+      perl 5.006
+      strict 0
+      warnings 0
+  Capture-Tiny-0.48
+    pathname: D/DA/DAGOLDEN/Capture-Tiny-0.48.tar.gz
+    provides:
+      Capture::Tiny 0.48
+    requirements:
+      Carp 0
+      Exporter 0
+      ExtUtils::MakeMaker 6.17
+      File::Spec 0
+      File::Temp 0
+      IO::Handle 0
+      Scalar::Util 0
+      perl 5.006
+      strict 0
+      warnings 0
   Carp-Clan-6.08
     pathname: E/ET/ETHER/Carp-Clan-6.08.tar.gz
     provides:
@@ -145,6 +173,17 @@ DISTRIBUTIONS
     requirements:
       ExtUtils::MakeMaker 6.64
       perl 5.008001
+      strict 0
+      warnings 0
+  Class-Tiny-1.008
+    pathname: D/DA/DAGOLDEN/Class-Tiny-1.008.tar.gz
+    provides:
+      Class::Tiny 1.008
+      Class::Tiny::Object 1.008
+    requirements:
+      Carp 0
+      ExtUtils::MakeMaker 6.17
+      perl 5.006
       strict 0
       warnings 0
   Class-XSAccessor-1.19
@@ -627,6 +666,32 @@ DISTRIBUTIONS
       XSLoader 0.02
       parent 0
       perl 5.008001
+  Data-Cmp-0.010
+    pathname: P/PE/PERLANCAR/Data-Cmp-0.010.tar.gz
+    provides:
+      Data::Cmp 0.010
+      Data::Cmp::Numeric 0.010
+      Data::Cmp::StrOrNumeric 0.010
+    requirements:
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      Scalar::Util 0
+      perl 5.010001
+      strict 0
+      warnings 0
+  Data-Dmp-0.241
+    pathname: P/PE/PERLANCAR/Data-Dmp-0.241.tar.gz
+    provides:
+      Data::Dmp 0.241
+    requirements:
+      B::Deparse 0
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      Regexp::Stringify 0
+      Scalar::Util 0
+      perl 5.010001
+      strict 0
+      warnings 0
   Data-Dump-1.25
     pathname: G/GA/GARU/Data-Dump-1.25.tar.gz
     provides:
@@ -686,6 +751,26 @@ DISTRIBUTIONS
       Test::More 0.94
       Test::Requires 0
       perl 5.008
+  Data-ModeMerge-0.360
+    pathname: P/PE/PERLANCAR/Data-ModeMerge-0.360.tar.gz
+    provides:
+      Data::ModeMerge 0.360
+      Data::ModeMerge::Config 0.360
+      Data::ModeMerge::Mode::ADD 0.360
+      Data::ModeMerge::Mode::Base 0.360
+      Data::ModeMerge::Mode::CONCAT 0.360
+      Data::ModeMerge::Mode::DELETE 0.360
+      Data::ModeMerge::Mode::KEEP 0.360
+      Data::ModeMerge::Mode::NORMAL 0.360
+      Data::ModeMerge::Mode::SUBTRACT 0.360
+    requirements:
+      Data::Dmp 0.241
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      Mo 0
+      perl 5.010001
+      strict 0
+      warnings 0
   Data-MuForm-0.05
     pathname: G/GS/GSHANK/Data-MuForm-0.05.tar.gz
     provides:
@@ -796,6 +881,293 @@ DISTRIBUTIONS
       Scalar::Util 0
       parent 0
       strictures 0
+  Data-Sah-0.911
+    pathname: P/PE/PERLANCAR/Data-Sah-0.911.tar.gz
+    provides:
+      Data::Sah 0.911
+      Data::Sah::Compiler 0.911
+      Data::Sah::Compiler::Prog 0.911
+      Data::Sah::Compiler::Prog::TH 0.911
+      Data::Sah::Compiler::Prog::TH::all 0.911
+      Data::Sah::Compiler::Prog::TH::any 0.911
+      Data::Sah::Compiler::TH 0.911
+      Data::Sah::Compiler::TextResultRole 0.911
+      Data::Sah::Compiler::human 0.911
+      Data::Sah::Compiler::human::TH 0.911
+      Data::Sah::Compiler::human::TH::Comparable 0.911
+      Data::Sah::Compiler::human::TH::HasElems 0.911
+      Data::Sah::Compiler::human::TH::Sortable 0.911
+      Data::Sah::Compiler::human::TH::all 0.911
+      Data::Sah::Compiler::human::TH::any 0.911
+      Data::Sah::Compiler::human::TH::array 0.911
+      Data::Sah::Compiler::human::TH::bool 0.911
+      Data::Sah::Compiler::human::TH::buf 0.911
+      Data::Sah::Compiler::human::TH::cistr 0.911
+      Data::Sah::Compiler::human::TH::code 0.911
+      Data::Sah::Compiler::human::TH::date 0.911
+      Data::Sah::Compiler::human::TH::datenotime 0.911
+      Data::Sah::Compiler::human::TH::datetime 0.911
+      Data::Sah::Compiler::human::TH::duration 0.911
+      Data::Sah::Compiler::human::TH::float 0.911
+      Data::Sah::Compiler::human::TH::hash 0.911
+      Data::Sah::Compiler::human::TH::int 0.911
+      Data::Sah::Compiler::human::TH::num 0.911
+      Data::Sah::Compiler::human::TH::obj 0.911
+      Data::Sah::Compiler::human::TH::re 0.911
+      Data::Sah::Compiler::human::TH::str 0.911
+      Data::Sah::Compiler::human::TH::timeofday 0.911
+      Data::Sah::Compiler::human::TH::undef 0.911
+      Data::Sah::Compiler::perl 0.911
+      Data::Sah::Compiler::perl::TH 0.911
+      Data::Sah::Compiler::perl::TH::all 0.911
+      Data::Sah::Compiler::perl::TH::any 0.911
+      Data::Sah::Compiler::perl::TH::array 0.911
+      Data::Sah::Compiler::perl::TH::bool 0.911
+      Data::Sah::Compiler::perl::TH::buf 0.911
+      Data::Sah::Compiler::perl::TH::cistr 0.911
+      Data::Sah::Compiler::perl::TH::code 0.911
+      Data::Sah::Compiler::perl::TH::date 0.911
+      Data::Sah::Compiler::perl::TH::datenotime 0.911
+      Data::Sah::Compiler::perl::TH::datetime 0.911
+      Data::Sah::Compiler::perl::TH::duration 0.911
+      Data::Sah::Compiler::perl::TH::float 0.911
+      Data::Sah::Compiler::perl::TH::hash 0.911
+      Data::Sah::Compiler::perl::TH::int 0.911
+      Data::Sah::Compiler::perl::TH::num 0.911
+      Data::Sah::Compiler::perl::TH::obj 0.911
+      Data::Sah::Compiler::perl::TH::re 0.911
+      Data::Sah::Compiler::perl::TH::str 0.911
+      Data::Sah::Compiler::perl::TH::timeofday 0.911
+      Data::Sah::Compiler::perl::TH::undef 0.911
+      Data::Sah::Human 0.911
+      Data::Sah::Lang 0.911
+      Data::Sah::Lang::fr_FR 0.911
+      Data::Sah::Lang::id_ID 0.911
+      Data::Sah::Lang::zh_CN 0.911
+      Data::Sah::Type::BaseType 0.911
+      Data::Sah::Type::Comparable 0.911
+      Data::Sah::Type::HasElems 0.911
+      Data::Sah::Type::Sortable 0.911
+      Data::Sah::Type::all 0.911
+      Data::Sah::Type::any 0.911
+      Data::Sah::Type::array 0.911
+      Data::Sah::Type::bool 0.911
+      Data::Sah::Type::buf 0.911
+      Data::Sah::Type::cistr 0.911
+      Data::Sah::Type::code 0.911
+      Data::Sah::Type::date 0.911
+      Data::Sah::Type::datenotime 0.911
+      Data::Sah::Type::datetime 0.911
+      Data::Sah::Type::duration 0.911
+      Data::Sah::Type::float 0.911
+      Data::Sah::Type::hash 0.911
+      Data::Sah::Type::int 0.911
+      Data::Sah::Type::num 0.911
+      Data::Sah::Type::obj 0.911
+      Data::Sah::Type::re 0.911
+      Data::Sah::Type::str 0.911
+      Data::Sah::Type::timeofday 0.911
+      Data::Sah::Type::undef 0.911
+      Data::Sah::Util::Func 0.911
+      Data::Sah::Util::Role 0.911
+      Data::Sah::Util::Type::Date 0.911
+      Data::Sah::Util::TypeX 0.911
+      Test::Data::Sah 0.911
+      Test::Data::Sah::Human 0.911
+      Test::Data::Sah::Perl 0.911
+    requirements:
+      Data::Cmp 0.002
+      Data::Dmp 0.241
+      Data::Dump 0
+      Data::Sah::Coerce 0.050
+      Data::Sah::CoerceCommon 0.050
+      Data::Sah::DefaultValueCommon 0
+      Data::Sah::Filter 0.006
+      Data::Sah::FilterCommon 0.003
+      Data::Sah::Normalize 0.051
+      Data::Sah::Resolve 0.010
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      File::ShareDir 0
+      File::ShareDir::Tarball 0
+      File::Slurper 0
+      File::chdir 0
+      JSON 0
+      Language::Expr 0.29
+      Language::Expr::Interpreter::var_enumer 0
+      Lingua::EN::Numbers::Ordinate 1.02
+      Log::ger 0.038
+      Mo 0
+      Module::Installed::Tiny 0.004
+      POSIX 0
+      Regexp::Stringify 0
+      Role::Tiny 0
+      Role::Tiny::With 0
+      Scalar::Util 0
+      Scalar::Util::Numeric::PP 0
+      Test::More 0.98
+      Text::sprintfn 0
+      Tie::IxHash 0
+      Time::HiRes 0
+      parent 0
+      perl 5.010001
+      strict 0
+      utf8 0
+      warnings 0
+  Data-Sah-Coerce-0.052
+    pathname: P/PE/PERLANCAR/Data-Sah-Coerce-0.052.tar.gz
+    provides:
+      Data::Sah::Coerce 0.052
+      Data::Sah::Coerce::js::To_bool::From_float::zero_one 0.052
+      Data::Sah::Coerce::js::To_bool::From_str::common_words 0.052
+      Data::Sah::Coerce::js::To_date::From_float::epoch 0.052
+      Data::Sah::Coerce::js::To_date::From_obj::date 0.052
+      Data::Sah::Coerce::js::To_date::From_str::date_parse 0.052
+      Data::Sah::Coerce::js::To_datenotime::From_float::epoch 0.052
+      Data::Sah::Coerce::js::To_datenotime::From_obj::date 0.052
+      Data::Sah::Coerce::js::To_datenotime::From_str::date_parse 0.052
+      Data::Sah::Coerce::js::To_datetime::From_float::epoch 0.052
+      Data::Sah::Coerce::js::To_datetime::From_obj::date 0.052
+      Data::Sah::Coerce::js::To_datetime::From_str::date_parse 0.052
+      Data::Sah::Coerce::js::To_duration::From_float::seconds 0.052
+      Data::Sah::Coerce::js::To_duration::From_str::iso8601 0.052
+      Data::Sah::Coerce::js::To_timeofday::From_str::hms 0.052
+      Data::Sah::Coerce::perl::To_bool::From_str::common_words 0.052
+      Data::Sah::Coerce::perl::To_date::From_float::epoch 0.052
+      Data::Sah::Coerce::perl::To_date::From_float::epoch_always 0.052
+      Data::Sah::Coerce::perl::To_date::From_float::epoch_always_jakarta 0.052
+      Data::Sah::Coerce::perl::To_date::From_float::epoch_always_local 0.052
+      Data::Sah::Coerce::perl::To_date::From_float::epoch_jakarta 0.052
+      Data::Sah::Coerce::perl::To_date::From_float::epoch_local 0.052
+      Data::Sah::Coerce::perl::To_date::From_obj::datetime 0.052
+      Data::Sah::Coerce::perl::To_date::From_obj::time_moment 0.052
+      Data::Sah::Coerce::perl::To_date::From_str::iso8601 0.052
+      Data::Sah::Coerce::perl::To_datenotime::From_float::epoch 0.052
+      Data::Sah::Coerce::perl::To_datenotime::From_float::epoch_always 0.052
+      Data::Sah::Coerce::perl::To_datenotime::From_obj::datetime 0.052
+      Data::Sah::Coerce::perl::To_datenotime::From_obj::time_moment 0.052
+      Data::Sah::Coerce::perl::To_datenotime::From_str::iso8601 0.052
+      Data::Sah::Coerce::perl::To_datetime::From_float::epoch 0.052
+      Data::Sah::Coerce::perl::To_datetime::From_float::epoch_always 0.052
+      Data::Sah::Coerce::perl::To_datetime::From_obj::datetime 0.052
+      Data::Sah::Coerce::perl::To_datetime::From_obj::time_moment 0.052
+      Data::Sah::Coerce::perl::To_datetime::From_str::iso8601 0.052
+      Data::Sah::Coerce::perl::To_duration::From_float::seconds 0.052
+      Data::Sah::Coerce::perl::To_duration::From_obj::datetime_duration 0.052
+      Data::Sah::Coerce::perl::To_duration::From_str::human 0.052
+      Data::Sah::Coerce::perl::To_duration::From_str::iso8601 0.052
+      Data::Sah::Coerce::perl::To_float::From_str::percent 0.052
+      Data::Sah::Coerce::perl::To_int::From_str::percent 0.052
+      Data::Sah::Coerce::perl::To_num::From_str::percent 0.052
+      Data::Sah::Coerce::perl::To_timeofday::From_obj::date_timeofday 0.052
+      Data::Sah::Coerce::perl::To_timeofday::From_str::hms 0.052
+      Data::Sah::CoerceCommon 0.052
+      Data::Sah::CoerceJS 0.052
+    requirements:
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      File::Temp 0.2307
+      IPC::System::Options 0.339
+      JSON 0
+      Log::ger 0.038
+      Nodejs::Util 0.007
+      Time::Duration::Parse::AsHash 0
+      Time::Local 1.27
+      perl 5.010001
+      strict 0
+      subroutines 0
+      warnings 0
+  Data-Sah-DefaultValue-0.001
+    pathname: P/PE/PERLANCAR/Data-Sah-DefaultValue-0.001.tar.gz
+    provides:
+      Data::Sah::DefaultValue 0.001
+      Data::Sah::DefaultValueCommon 0.001
+      Data::Sah::DefaultValueJS 0.001
+      Data::Sah::Value::js::Math::random 0.001
+      Data::Sah::Value::js::Str::repeat 0.001
+      Data::Sah::Value::perl::Math::random 0.001
+      Data::Sah::Value::perl::Str::repeat 0.001
+    requirements:
+      Data::Dmp 0.241
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      File::Temp 0.2307
+      IPC::System::Options 0.339
+      JSON::MaybeXS 0
+      Log::ger 0.038
+      Nodejs::Util 0.007
+      perl 5.010001
+      strict 0
+      warnings 0
+  Data-Sah-Filter-0.008
+    pathname: P/PE/PERLANCAR/Data-Sah-Filter-0.008.tar.gz
+    provides:
+      Data::Sah::Filter 0.008
+      Data::Sah::Filter::js::Str::downcase 0.008
+      Data::Sah::Filter::js::Str::lc 0.008
+      Data::Sah::Filter::js::Str::lcfirst 0.008
+      Data::Sah::Filter::js::Str::lowercase 0.008
+      Data::Sah::Filter::js::Str::ltrim 0.008
+      Data::Sah::Filter::js::Str::rtrim 0.008
+      Data::Sah::Filter::js::Str::trim 0.008
+      Data::Sah::Filter::js::Str::uc 0.008
+      Data::Sah::Filter::js::Str::ucfirst 0.008
+      Data::Sah::Filter::js::Str::upcase 0.008
+      Data::Sah::Filter::js::Str::uppercase 0.008
+      Data::Sah::Filter::perl::Float::ceil 0.008
+      Data::Sah::Filter::perl::Float::check_has_fraction 0.008
+      Data::Sah::Filter::perl::Float::check_int 0.008
+      Data::Sah::Filter::perl::Float::floor 0.008
+      Data::Sah::Filter::perl::Float::round 0.008
+      Data::Sah::Filter::perl::Str::check 0.008
+      Data::Sah::Filter::perl::Str::downcase 0.008
+      Data::Sah::Filter::perl::Str::lc 0.008
+      Data::Sah::Filter::perl::Str::lcfirst 0.008
+      Data::Sah::Filter::perl::Str::lowercase 0.008
+      Data::Sah::Filter::perl::Str::ltrim 0.008
+      Data::Sah::Filter::perl::Str::replace_map 0.008
+      Data::Sah::Filter::perl::Str::rtrim 0.008
+      Data::Sah::Filter::perl::Str::trim 0.008
+      Data::Sah::Filter::perl::Str::uc 0.008
+      Data::Sah::Filter::perl::Str::ucfirst 0.008
+      Data::Sah::Filter::perl::Str::upcase 0.008
+      Data::Sah::Filter::perl::Str::uppercase 0.008
+      Data::Sah::FilterCommon 0.008
+      Data::Sah::FilterJS 0.008
+    requirements:
+      Data::Dmp 0.240
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      File::Temp 0.2307
+      IPC::System::Options 0.335
+      JSON 0
+      Log::ger 0.037
+      Nodejs::Util 0.007
+      perl 5.010001
+      strict 0
+      warnings 0
+  Data-Sah-Normalize-0.051
+    pathname: P/PE/PERLANCAR/Data-Sah-Normalize-0.051.tar.gz
+    provides:
+      Data::Sah::Normalize 0.051
+    requirements:
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      perl 5.010001
+      strict 0
+      warnings 0
+  Data-Sah-Resolve-0.011
+    pathname: P/PE/PERLANCAR/Data-Sah-Resolve-0.011.tar.gz
+    provides:
+      Data::Sah::Resolve 0.011
+    requirements:
+      Data::ModeMerge 0
+      Data::Sah::Normalize 0.051
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      perl 5.010001
+      strict 0
+      warnings 0
   Data-Visitor-0.31
     pathname: E/ET/ETHER/Data-Visitor-0.31.tar.gz
     provides:
@@ -1511,6 +1883,16 @@ DISTRIBUTIONS
     requirements:
       Module::Build 0.4004
       perl 5.014
+  File-Copy-Recursive-0.45
+    pathname: D/DM/DMUEY/File-Copy-Recursive-0.45.tar.gz
+    provides:
+      File::Copy::Recursive 0.45
+    requirements:
+      Cwd 0
+      ExtUtils::MakeMaker 0
+      File::Copy 0
+      File::Glob 0
+      File::Spec 0
   File-ShareDir-1.118
     pathname: R/RE/REHSACK/File-ShareDir-1.118.tar.gz
     provides:
@@ -1536,6 +1918,61 @@ DISTRIBUTIONS
       perl 5.006
       strict 0
       warnings 0
+  File-ShareDir-Tarball-0.2.2
+    pathname: Y/YA/YANICK/File-ShareDir-Tarball-0.2.2.tar.gz
+    provides:
+      File::ShareDir::Tarball v0.2.2
+    requirements:
+      Archive::Tar 0
+      Carp 0
+      Exporter 0
+      File::Find 0
+      File::ShareDir 0
+      File::Temp 0
+      File::chdir 0
+      Module::Build 0.3601
+      Test::File::ShareDir v0.3.0
+      Test::More 0.88
+      parent 0
+      strict 0
+      warnings 0
+  File-Slurper-0.013
+    pathname: L/LE/LEONT/File-Slurper-0.013.tar.gz
+    provides:
+      File::Slurper 0.013
+    requirements:
+      Carp 0
+      Encode 2.11
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      PerlIO::encoding 0
+      constant 0
+      perl 5.008
+      strict 0
+      warnings 0
+  File-Which-1.27
+    pathname: P/PL/PLICEASE/File-Which-1.27.tar.gz
+    provides:
+      File::Which 1.27
+    requirements:
+      ExtUtils::MakeMaker 0
+      base 0
+      perl 5.006
+  File-chdir-0.1010
+    pathname: D/DA/DAGOLDEN/File-chdir-0.1010.tar.gz
+    provides:
+      File::chdir 0.1010
+      File::chdir::ARRAY 0.1010
+      File::chdir::SCALAR 0.1010
+    requirements:
+      Carp 0
+      Cwd 3.16
+      Exporter 0
+      ExtUtils::MakeMaker 6.17
+      File::Spec::Functions 3.27
+      perl 5.006
+      strict 0
+      vars 0
   Form-Tiny-2.08
     pathname: B/BR/BRTASTIC/Form-Tiny-2.08.tar.gz
     provides:
@@ -1940,6 +2377,44 @@ DISTRIBUTIONS
       Exporter 5.57
       ExtUtils::MakeMaker 0
       perl 5.008
+  IO-Tty-1.16
+    pathname: T/TO/TODDR/IO-Tty-1.16.tar.gz
+    provides:
+      IO::Pty 1.16
+      IO::Tty 1.16
+      IO::Tty::Constant 1.16
+    requirements:
+      ExtUtils::MakeMaker 0
+      Test::More 0
+  IPC-Run-20200505.0
+    pathname: T/TO/TODDR/IPC-Run-20200505.0.tar.gz
+    provides:
+      IPC::Run 20200505.0
+      IPC::Run::Debug 20200505.0
+      IPC::Run::IO 20200505.0
+      IPC::Run::Timer 20200505.0
+      IPC::Run::Win32Helper 20200505.0
+      IPC::Run::Win32IO 20200505.0
+      IPC::Run::Win32Pump 20200505.0
+    requirements:
+      ExtUtils::MakeMaker 0
+      IO::Pty 1.08
+      Test::More 0.47
+  IPC-System-Options-0.340
+    pathname: P/PE/PERLANCAR/IPC-System-Options-0.340.tar.gz
+    provides:
+      IPC::System::Options 0.340
+    requirements:
+      Capture::Tiny 0
+      Cwd 0
+      ExtUtils::MakeMaker 0
+      IPC::Run 0
+      Log::ger::Format 0.018
+      Log::ger::Format::MultilevelLog 0
+      Proc::ChildError 0
+      String::ShellQuote 0
+      strict 0
+      warnings 0
   Import-Into-1.002005
     pathname: H/HA/HAARG/Import-Into-1.002005.tar.gz
     provides:
@@ -2064,6 +2539,39 @@ DISTRIBUTIONS
       Scalar::Util 0
       perl 5.006002
       strict 0
+  Language-Expr-0.29
+    pathname: P/PE/PERLANCAR/Language-Expr-0.29.tar.gz
+    provides:
+      Language::Expr 0.29
+      Language::Expr::Compiler::Base 0.29
+      Language::Expr::Compiler::js 0.29
+      Language::Expr::Compiler::perl 0.29
+      Language::Expr::CompilerRole 0.29
+      Language::Expr::EvaluatorRole 0.29
+      Language::Expr::Interpreter::Base 0.29
+      Language::Expr::Interpreter::default 0.29
+      Language::Expr::Interpreter::dummy 0.29
+      Language::Expr::Interpreter::var_enumer 0.29
+      Language::Expr::InterpreterRole 0.29
+      Language::Expr::JS 0.29
+      Language::Expr::Parser 0.29
+    requirements:
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      File::Temp 0
+      JSON::MaybeXS 0
+      List::Util 0
+      Mo 0
+      Nodejs::Util 0.006
+      Regexp::Grammars 1.005
+      Role::Tiny 0
+      Role::Tiny::With 0
+      UUID::Tiny 0
+      boolean 0.20
+      parent 0
+      perl 5.010001
+      strict 0
+      warnings 0
   Lingua-EN-Inflexion-0.002007
     pathname: D/DC/DCONWAY/Lingua-EN-Inflexion-0.002007.tar.gz
     provides:
@@ -2082,6 +2590,16 @@ DISTRIBUTIONS
       Lingua::EN::Words2Nums 0
       Test::More 0
       perl 5.010
+  Lingua-EN-Numbers-Ordinate-1.05
+    pathname: N/NE/NEILB/Lingua-EN-Numbers-Ordinate-1.05.tar.gz
+    provides:
+      Lingua::EN::Numbers::Ordinate 1.05
+    requirements:
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      perl 5.006
+      strict 0
+      warnings 0
   Lingua-EN-Nums2Words-1.16
     pathname: H/HI/HIGHTOWE/Lingua-EN-Nums2Words-1.16.zip
     provides:
@@ -2129,6 +2647,32 @@ DISTRIBUTIONS
       Module::Build 0.38
       Scalar::Util 0
       Term::ANSIColor 0
+  Log-ger-0.038
+    pathname: P/PE/PERLANCAR/Log-ger-0.038.tar.gz
+    provides:
+      Log::ger 0.038
+      Log::ger::Filter 0.038
+      Log::ger::Filter::Code 0.038
+      Log::ger::Format 0.038
+      Log::ger::Format::Default 0.038
+      Log::ger::Format::MultilevelLog 0.038
+      Log::ger::Format::None 0.038
+      Log::ger::Heavy 0.038
+      Log::ger::Layout 0.038
+      Log::ger::Output 0.038
+      Log::ger::Output::Array 0.038
+      Log::ger::Output::Null 0.038
+      Log::ger::Output::String 0.038
+      Log::ger::Plugin 0.038
+      Log::ger::Plugin::MultilevelLog 0.038
+      Log::ger::Util 0.038
+    requirements:
+      Data::Dumper 0
+      ExtUtils::MakeMaker 0
+      parent 0
+      strict 0
+      vars 0
+      warnings 0
   MRO-Compat-0.15
     pathname: H/HA/HAARG/MRO-Compat-0.15.tar.gz
     provides:
@@ -2175,6 +2719,30 @@ DISTRIBUTIONS
       Net::Domain 1.05
       Net::SMTP 1.03
       Test::More 0
+  Mo-0.40
+    pathname: T/TI/TINITA/Mo-0.40.tar.gz
+    provides:
+      Mo 0.40
+      Mo::Golf 0.40
+      Mo::Inline 0.40
+      Mo::Moose 0.40
+      Mo::Mouse 0.40
+      Mo::build 0.40
+      Mo::builder 0.40
+      Mo::chain 0.40
+      Mo::coerce 0.40
+      Mo::default 0.40
+      Mo::exporter 0.40
+      Mo::import 0.40
+      Mo::importer 0.40
+      Mo::is 0.40
+      Mo::nonlazy 0.40
+      Mo::option 0.40
+      Mo::required 0.40
+      Mo::xs 0.40
+    requirements:
+      ExtUtils::MakeMaker 0
+      perl 5.006000
   Module-Build-0.4231
     pathname: L/LE/LEONT/Module-Build-0.4231.tar.gz
     provides:
@@ -2265,6 +2833,15 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 0
       Module::Runtime 0.012
       Try::Tiny 0
+      strict 0
+      warnings 0
+  Module-Installed-Tiny-0.005
+    pathname: P/PE/PERLANCAR/Module-Installed-Tiny-0.005.tar.gz
+    provides:
+      Module::Installed::Tiny 0.005
+    requirements:
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
       strict 0
       warnings 0
   Module-Pluggable-5.2
@@ -3218,6 +3795,19 @@ DISTRIBUTIONS
       Scalar::Util 1.25
       Time::Local 1.19
       perl 5.008008
+  Nodejs-Util-0.012
+    pathname: P/PE/PERLANCAR/Nodejs-Util-0.012.tar.gz
+    provides:
+      Nodejs::Util 0.012
+    requirements:
+      Cwd 0
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      File::Which 0
+      IPC::System::Options 0.330
+      perl 5.010001
+      strict 0
+      warnings 0
   Package-DeprecationManager-0.17
     pathname: D/DR/DROLSKY/Package-DeprecationManager-0.17.tar.gz
     provides:
@@ -3366,6 +3956,13 @@ DISTRIBUTIONS
       strict 0
       warnings 0
       warnings::register 0
+  Proc-ChildError-0.04
+    pathname: P/PE/PERLANCAR/Proc-ChildError-0.04.tar.gz
+    provides:
+      Proc::ChildError 0.04
+    requirements:
+      ExtUtils::MakeMaker 0
+      perl 5.008
   Ref-Util-0.204
     pathname: A/AR/ARC/Ref-Util-0.204.tar.gz
     provides:
@@ -3429,6 +4026,29 @@ DISTRIBUTIONS
       perl 5.010
       strict 0
       vars 0
+      warnings 0
+  Regexp-Grammars-1.057
+    pathname: D/DC/DCONWAY/Regexp-Grammars-1.057.tar.gz
+    provides:
+      Regexp::Grammars 1.057
+      Regexp::Grammars::ContextRestorer 1.057
+      Regexp::Grammars::Precursor 1.057
+      Regexp::Grammars::TranslatorRestorer 1.057
+    requirements:
+      B::Hooks::Parser 0.16
+      Test::More 0
+      perl v5.10.0
+      version 0
+  Regexp-Stringify-0.06
+    pathname: P/PE/PERLANCAR/Regexp-Stringify-0.06.tar.gz
+    provides:
+      Regexp::Stringify 0.06
+    requirements:
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      perl 5.010001
+      re 0
+      strict 0
       warnings 0
   Role-Tiny-2.002004
     pathname: H/HA/HAARG/Role-Tiny-2.002004.tar.gz
@@ -3503,6 +4123,13 @@ DISTRIBUTIONS
     requirements:
       ExtUtils::MakeMaker 0
       perl 5.006
+  Scalar-Util-Numeric-PP-0.04
+    pathname: P/PE/PERLANCAR/Scalar-Util-Numeric-PP-0.04.tar.gz
+    provides:
+      Scalar::Util::Numeric::PP 0.04
+    requirements:
+      ExtUtils::MakeMaker 0
+      perl 5.010001
   Scope-Guard-0.21
     pathname: C/CH/CHOCOLATE/Scope-Guard-0.21.tar.gz
     provides:
@@ -3588,6 +4215,12 @@ DISTRIBUTIONS
     requirements:
       ExtUtils::MakeMaker 0
       Test::More 0
+  String-ShellQuote-1.04
+    pathname: R/RO/ROSCH/String-ShellQuote-1.04.tar.gz
+    provides:
+      String::ShellQuote 1.04
+    requirements:
+      ExtUtils::MakeMaker 0
   Sub-Exporter-0.988
     pathname: R/RJ/RJBS/Sub-Exporter-0.988.tar.gz
     provides:
@@ -3755,6 +4388,30 @@ DISTRIBUTIONS
       Try::Tiny 0.07
       strict 0
       warnings 0
+  Test-File-ShareDir-1.001002
+    pathname: K/KE/KENTNL/Test-File-ShareDir-1.001002.tar.gz
+    provides:
+      Test::File::ShareDir 1.001002
+      Test::File::ShareDir::Dist 1.001002
+      Test::File::ShareDir::Module 1.001002
+      Test::File::ShareDir::Object::Dist 1.001002
+      Test::File::ShareDir::Object::Inc 1.001002
+      Test::File::ShareDir::Object::Module 1.001002
+      Test::File::ShareDir::TempDirObject 1.001002
+      Test::File::ShareDir::Utils 1.001002
+    requirements:
+      Carp 0
+      Class::Tiny 0
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      File::Copy::Recursive 0
+      File::ShareDir 1.00
+      Path::Tiny 0.018
+      Scope::Guard 0
+      parent 0
+      perl 5.006
+      strict 0
+      warnings 0
   Test-Requires-0.11
     pathname: T/TO/TOKUHIROM/Test-Requires-0.11.tar.gz
     provides:
@@ -3799,6 +4456,23 @@ DISTRIBUTIONS
       Exporter 0
       Test::More 0
       perl 5.005
+  Text-sprintfn-0.090
+    pathname: P/PE/PERLANCAR/Text-sprintfn-0.090.tar.gz
+    provides:
+      Text::sprintfn 0.090
+    requirements:
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      perl 5.010001
+      strict 0
+      warnings 0
+  Tie-IxHash-1.23
+    pathname: C/CH/CHORNY/Tie-IxHash-1.23.tar.gz
+    provides:
+      Tie::IxHash 1.23
+    requirements:
+      Test::More 0
+      perl 5.005
   Tie-ToObject-0.03
     pathname: N/NU/NUFFIN/Tie-ToObject-0.03.tar.gz
     provides:
@@ -3809,6 +4483,16 @@ DISTRIBUTIONS
       Test::More 0
       Test::use::ok 0
       Tie::RefHash 0
+  Time-Duration-Parse-AsHash-0.10.6
+    pathname: P/PE/PERLANCAR/Time-Duration-Parse-AsHash-0.10.6.tar.gz
+    provides:
+      Time::Duration::Parse::AsHash 0.010006
+    requirements:
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      perl 5.010001
+      strict 0
+      warnings 0
   TimeDate-2.33
     pathname: A/AT/ATOOMIC/TimeDate-2.33.tar.gz
     provides:
@@ -3987,6 +4671,19 @@ DISTRIBUTIONS
       strict 0
       utf8 0
       warnings 0
+  UUID-Tiny-1.04
+    pathname: C/CA/CAUGUSTIN/UUID-Tiny-1.04.tar.gz
+    provides:
+      UUID::Tiny 1.04
+    requirements:
+      Carp 0
+      Digest::MD5 0
+      ExtUtils::MakeMaker 0
+      IO::File 0
+      MIME::Base64 0
+      POSIX 0
+      Test::More 0
+      Time::HiRes 0
   Valiant-0.001011
     pathname: J/JJ/JJNAPIORK/Valiant-0.001011.tar.gz
     provides:
@@ -4186,6 +4883,13 @@ DISTRIBUTIONS
       perl 5.008001
       strict 0
       warnings 0
+  boolean-0.46
+    pathname: I/IN/INGY/boolean-0.46.tar.gz
+    provides:
+      boolean 0.46
+    requirements:
+      ExtUtils::MakeMaker 0
+      perl 5.008001
   indirect-0.39
     pathname: V/VP/VPIT/indirect-0.39.tar.gz
     provides:
@@ -4251,3 +4955,9 @@ DISTRIBUTIONS
       indirect 0
       multidimensional 0
       perl 5.006
+  subroutines-0.001
+    pathname: P/PE/PERLANCAR/subroutines-0.001.tar.gz
+    provides:
+      subroutines 0.001
+    requirements:
+      ExtUtils::MakeMaker 0
