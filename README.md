@@ -9,6 +9,27 @@ These benchmarks don't (currently?) measure:
 
 Object construction is part of the benchmark, but can be skipped if certain validator implementation does not require it.
 
+## Running the benchmark
+
+First, you have to install Carton for your perl and use it to install dependencies locally:
+
+```
+cpan Carton
+carton install
+```
+
+The benchmark is run one case at a time:
+
+```
+carton exec ./benchmark.pl <case_name>
+```
+
+Results can be optionally filtered through `format.pl` script, which reduces horizontal size of the output:
+
+```
+carton exec ./benchmark.pl <case_name> | ./format.pl
+```
+
 ## Cases
 
 Here is the list of current benchmark cases with rationales behind them:
