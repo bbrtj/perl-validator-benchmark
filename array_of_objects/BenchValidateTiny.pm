@@ -1,6 +1,5 @@
 package BenchValidateTiny;
 
-use Moo;
 use Validate::Tiny ':all';
 use Types::Standard qw(Str Int);
 

@@ -35,8 +35,7 @@ sub get_benchmark_runners
 			die unless $form->validate($data);
 		},
 		BenchValidateTiny => sub {
-			my $form = BenchValidateTiny->new;
-			die unless $form->valid($data)->{success};
+			die unless BenchValidateTiny->valid($data)->{success};
 		},
 		BenchValiant => sub {
 			my $form = BenchValiant->new($data);
