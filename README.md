@@ -19,6 +19,12 @@ We pass a single field `a`, which is required and can be any scalar value.
 
 *Rationale*: we measure the runtime overhead each system has. The validation rule here is as easy as it can be on purpose. Results of this benchmark can be used to decide whether a validator should be used for simple data validation cases that will run very frequently.
 
+### multiple_fields
+
+We pass five fields `a`, `b`, `c`, `d`, `e`, all of which are required and strings.
+
+*Rationale*: we can compare results of the previous single_field validator and see how having multiple rules affects validator's performance. A big drop in validation speed can indicate a poorly optimized system.
+
 ### custom_validator
 
 We pass a single field `a`, which is a string value and must be shorter than 64 characters.
