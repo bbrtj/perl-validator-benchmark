@@ -34,6 +34,9 @@ sub get_benchmark_runners
 			my $form = BenchJsonSchemaModern->new;
 			die unless $form->validate($data);
 		},
+		BenchTypeTiny => sub {
+			die unless BenchTypeTiny->validate($data);
+		},
 		BenchValidateTiny => sub {
 			die unless BenchValidateTiny->valid($data)->{success};
 		},

@@ -20,6 +20,7 @@ sub participants
 		BenchHtmlFormHandler
 		BenchJsonSchemaTiny
 		BenchJsonSchemaModern
+		BenchTypeTiny
 		BenchValiant
 		BenchValidateTiny
 		BenchValidatorLivr
