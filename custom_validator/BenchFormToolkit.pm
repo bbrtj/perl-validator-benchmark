@@ -13,14 +13,22 @@ package Form::Toolkit::FieldRole::IsShort {
 	}
 }
 
+use feature 'state';
 use Moose;
 extends 'Form::Toolkit::Form';
 
 sub build_fields {
 	my ($self) = @_;
-	$self->add_field('String', 'a')
-		->add_role('Mandatory')
-		->add_role('IsShort');
+	state $fields = do {
+		[
+			$self->add_field('String', 'a')
+				->add_role('Mandatory')
+				->add_role('IsShort'),
+		]
+	};
+
+	$self->fields->@* = @$fields;
+	$self->clear; # since we reuse same field objects, clear the form
 }
 
 __PACKAGE__->meta->make_immutable();
