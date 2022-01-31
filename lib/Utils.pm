@@ -55,7 +55,7 @@ sub get_benchmark_runners
 			unless exists $runners{$class};
 
 		my $res = eval "require $class; 1;";
-		die "error loading $class" unless $res;
+		die "error loading $class: $@" unless $res;
 
 		$out{$class =~ s/^Bench//r} = $runners{$class};
 	}
