@@ -14,13 +14,13 @@ sub data
 sub participants
 {
 	return qw(
+		BenchJsonSchemaModern
 		BenchDataMuForm
 		BenchDataSah
 		BenchFormTiny
 		BenchFormToolkit
 		BenchHtmlFormHandler
 		BenchJsonSchemaTiny
-		BenchJsonSchemaModern
 		BenchTypeTiny
 		BenchValiant
 		BenchValidateTiny
@@ -29,3 +29,4 @@ sub participants
 }
 
 1;
+

@@ -87,6 +87,12 @@ DISTRIBUTIONS
       Scalar::Util 0
       Sub::Name 0.05
       perl 5.006
+  Class-Accessor-Lite-0.08
+    pathname: K/KA/KAZUHO/Class-Accessor-Lite-0.08.tar.gz
+    provides:
+      Class::Accessor::Lite 0.08
+    requirements:
+      ExtUtils::MakeMaker 6.36
   Class-C3-0.35
     pathname: H/HA/HAARG/Class-C3-0.35.tar.gz
     provides:
@@ -230,10 +236,10 @@ DISTRIBUTIONS
       perl 5.006
       strict 0
       warnings 0
-  Cpanel-JSON-XS-4.27
-    pathname: R/RU/RURBAN/Cpanel-JSON-XS-4.27.tar.gz
+  Cpanel-JSON-XS-4.28
+    pathname: R/RU/RURBAN/Cpanel-JSON-XS-4.28.tar.gz
     provides:
-      Cpanel::JSON::XS 4.27
+      Cpanel::JSON::XS 4.28
       Cpanel::JSON::XS::Type undef
     requirements:
       Carp 0
@@ -1973,29 +1979,29 @@ DISTRIBUTIONS
       perl 5.006
       strict 0
       vars 0
-  Form-Tiny-2.09
-    pathname: B/BR/BRTASTIC/Form-Tiny-2.09.tar.gz
+  Form-Tiny-2.10
+    pathname: B/BR/BRTASTIC/Form-Tiny-2.10.tar.gz
     provides:
-      Form::Tiny 2.09
-      Form::Tiny::Error 2.09
-      Form::Tiny::Error::DoesNotValidate 2.09
-      Form::Tiny::Error::InvalidFormat 2.09
-      Form::Tiny::Error::IsntStrict 2.09
-      Form::Tiny::Error::NestedFormError 2.09
-      Form::Tiny::Error::Required 2.09
-      Form::Tiny::FieldDefinition 2.09
-      Form::Tiny::FieldDefinitionBuilder 2.09
-      Form::Tiny::Filter 2.09
-      Form::Tiny::Form 2.09
-      Form::Tiny::Hook 2.09
-      Form::Tiny::Inline 2.09
-      Form::Tiny::Inline::Builder 2.09
-      Form::Tiny::Meta 2.09
-      Form::Tiny::Meta::Filtered 2.09
-      Form::Tiny::Meta::Strict 2.09
-      Form::Tiny::Path 2.09
+      Form::Tiny 2.10
+      Form::Tiny::Error 2.10
+      Form::Tiny::Error::DoesNotValidate 2.10
+      Form::Tiny::Error::InvalidFormat 2.10
+      Form::Tiny::Error::IsntStrict 2.10
+      Form::Tiny::Error::NestedFormError 2.10
+      Form::Tiny::Error::Required 2.10
+      Form::Tiny::FieldDefinition 2.10
+      Form::Tiny::FieldDefinitionBuilder 2.10
+      Form::Tiny::Filter 2.10
+      Form::Tiny::Form 2.10
+      Form::Tiny::Hook 2.10
+      Form::Tiny::Inline 2.10
+      Form::Tiny::Inline::Builder 2.10
+      Form::Tiny::Meta 2.10
+      Form::Tiny::Meta::Filtered 2.10
+      Form::Tiny::Meta::Strict 2.10
+      Form::Tiny::Path 2.10
       Form::Tiny::Plugin undef
-      Form::Tiny::Utils 2.09
+      Form::Tiny::Utils 2.10
     requirements:
       ExtUtils::MakeMaker 0
       Import::Into 0
@@ -2079,6 +2085,22 @@ DISTRIBUTIONS
       perl 5.012
       strict 0
       warnings 0
+  HTML-Escape-1.11
+    pathname: T/TO/TOKUHIROM/HTML-Escape-1.11.tar.gz
+    provides:
+      HTML::Escape 1.11
+      HTML::Escape::PurePerl undef
+    requirements:
+      Devel::PPPort 3.20
+      Exporter 0
+      ExtUtils::CBuilder 0
+      Module::Build 0.4005
+      Module::Build::Pluggable::PPPort 0.04
+      Test::More 0.98
+      Test::Requires 0
+      XSLoader 0
+      parent 0
+      perl 5.008008
   HTML-FormHandler-0.40068
     pathname: G/GS/GSHANK/HTML-FormHandler-0.40068.tar.gz
     provides:
@@ -2444,32 +2466,30 @@ DISTRIBUTIONS
       JSON::PP 2.27300
       Scalar::Util 0
       perl 5.006
-  JSON-Schema-Modern-0.542
-    pathname: E/ET/ETHER/JSON-Schema-Modern-0.542.tar.gz
+  JSON-Schema-Modern-0.552
+    pathname: E/ET/ETHER/JSON-Schema-Modern-0.552.tar.gz
     provides:
-      JSON::Schema::Modern 0.542
-      JSON::Schema::Modern::Annotation 0.542
-      JSON::Schema::Modern::Document 0.542
-      JSON::Schema::Modern::Error 0.542
-      JSON::Schema::Modern::Result 0.542
-      JSON::Schema::Modern::Utilities 0.542
-      JSON::Schema::Modern::Vocabulary 0.542
-      JSON::Schema::Modern::Vocabulary::Applicator 0.542
-      JSON::Schema::Modern::Vocabulary::Content 0.542
-      JSON::Schema::Modern::Vocabulary::Core 0.542
-      JSON::Schema::Modern::Vocabulary::FormatAnnotation 0.542
-      JSON::Schema::Modern::Vocabulary::FormatAssertion 0.542
-      JSON::Schema::Modern::Vocabulary::MetaData 0.542
-      JSON::Schema::Modern::Vocabulary::Unevaluated 0.542
-      JSON::Schema::Modern::Vocabulary::Validation 0.542
+      JSON::Schema::Modern 0.552
+      JSON::Schema::Modern::Annotation 0.552
+      JSON::Schema::Modern::Document 0.552
+      JSON::Schema::Modern::Error 0.552
+      JSON::Schema::Modern::Result 0.552
+      JSON::Schema::Modern::Utilities 0.552
+      JSON::Schema::Modern::Vocabulary 0.552
+      JSON::Schema::Modern::Vocabulary::Applicator 0.552
+      JSON::Schema::Modern::Vocabulary::Content 0.552
+      JSON::Schema::Modern::Vocabulary::Core 0.552
+      JSON::Schema::Modern::Vocabulary::FormatAnnotation 0.552
+      JSON::Schema::Modern::Vocabulary::FormatAssertion 0.552
+      JSON::Schema::Modern::Vocabulary::MetaData 0.552
+      JSON::Schema::Modern::Vocabulary::Unevaluated 0.552
+      JSON::Schema::Modern::Vocabulary::Validation 0.552
     requirements:
       B 0
       Carp 0
       Exporter 0
-      ExtUtils::MakeMaker 0
       Feature::Compat::Try 0
       File::ShareDir 0
-      File::ShareDir::Install 0.06
       Getopt::Long::Descriptive 0
       JSON::MaybeXS 1.004001
       JSON::PP 0
@@ -2501,10 +2521,10 @@ DISTRIBUTIONS
       strict 0
       strictures 2
       warnings 0
-  JSON-Schema-Tiny-0.014
-    pathname: E/ET/ETHER/JSON-Schema-Tiny-0.014.tar.gz
+  JSON-Schema-Tiny-0.015
+    pathname: E/ET/ETHER/JSON-Schema-Tiny-0.015.tar.gz
     provides:
-      JSON::Schema::Tiny 0.014
+      JSON::Schema::Tiny 0.015
     requirements:
       B 0
       Carp 0
@@ -2789,6 +2809,42 @@ DISTRIBUTIONS
       Text::ParseWords 0
       perl 5.006001
       version 0.87
+  Module-Build-Pluggable-0.10
+    pathname: T/TO/TOKUHIROM/Module-Build-Pluggable-0.10.tar.gz
+    provides:
+      Module::Build::Pluggable 0.10
+      Module::Build::Pluggable::Base undef
+      Module::Build::Pluggable::GithubMeta undef
+      Module::Build::Pluggable::Repository 0.10
+      Module::Build::Pluggable::Util undef
+      Test::Module::Build::Pluggable undef
+    requirements:
+      CPAN::Meta 0
+      CPAN::Meta::Prereqs 0
+      Class::Accessor::Lite 0
+      Class::Method::Modifiers 0
+      Data::OptList 0
+      File::Basename 0
+      File::Path 0
+      File::Temp 0
+      Module::Build 0.38
+      Module::Load 0
+      Test::SharedFork 0
+      parent 0
+      perl 5.008001
+  Module-Build-Pluggable-PPPort-0.04
+    pathname: T/TO/TOKUHIROM/Module-Build-Pluggable-PPPort-0.04.tar.gz
+    provides:
+      Module::Build::Pluggable::PPPort 0.04
+    requirements:
+      Class::Accessor::Lite 0
+      Devel::PPPort 3.19
+      Module::Build 0.38
+      Module::Build::Pluggable 0.03
+      Test::More 0.98
+      Test::Requires 0
+      parent 0
+      perl 5.008001
   Module-Build-Tiny-0.039
     pathname: L/LE/LEONT/Module-Build-Tiny-0.039.tar.gz
     provides:
@@ -4421,6 +4477,20 @@ DISTRIBUTIONS
       Test::Builder::Module 0
       Test::More 0.47
       perl 5.006
+  Test-SharedFork-0.35
+    pathname: E/EX/EXODIST/Test-SharedFork-0.35.tar.gz
+    provides:
+      Test::SharedFork 0.35
+      Test::SharedFork::Array undef
+      Test::SharedFork::Scalar undef
+      Test::SharedFork::Store undef
+    requirements:
+      ExtUtils::MakeMaker 6.64
+      File::Temp 0
+      Test::Builder 0.32
+      Test::Builder::Module 0
+      Test::More 0.88
+      perl 5.008_001
   Test-Warn-0.36
     pathname: B/BI/BIGJ/Test-Warn-0.36.tar.gz
     provides:
@@ -4684,11 +4754,9 @@ DISTRIBUTIONS
       POSIX 0
       Test::More 0
       Time::HiRes 0
-  Valiant-0.001011
-    pathname: J/JJ/JJNAPIORK/Valiant-0.001011.tar.gz
+  Valiant-0.001014
+    pathname: J/JJ/JJNAPIORK/Valiant-0.001014.tar.gz
     provides:
-      Catalyst::ActionRole::RenderView::Utils::NoView undef
-      Catalyst::ActionRole::Verbs::Utils::MethodNotAllowed 0.001
       DBIx::Class::Valiant undef
       DBIx::Class::Valiant::Result undef
       DBIx::Class::Valiant::ResultSet undef
@@ -4699,25 +4767,8 @@ DISTRIBUTIONS
       DBIx::Class::Valiant::Validates undef
       DBIx::Class::Valiant::Validator::Result undef
       DBIx::Class::Valiant::Validator::ResultSet undef
-      Example undef
-      Example::Base undef
-      Example::Controller::Root undef
-      Example::Model::Schema undef
-      Example::Schema 1
-      Example::Schema::DefaultRS undef
-      Example::Schema::Result undef
-      Example::Schema::Result::CreditCard undef
-      Example::Schema::Result::Person undef
-      Example::Schema::Result::PersonRole undef
-      Example::Schema::Result::Profile undef
-      Example::Schema::Result::Role undef
-      Example::Schema::Result::State undef
-      Example::Schema::ResultSet undef
-      Example::Schema::ResultSet::Person undef
-      Example::Schema::ResultSet::PersonRole undef
-      Example::Server undef
-      Example::View::HTML undef
-      Valiant 0.001011
+      DBIx::Class::Valiant::Validator::SetSize undef
+      Valiant 0.001014
       Valiant::Error undef
       Valiant::Errors undef
       Valiant::Filter undef
@@ -4728,6 +4779,7 @@ DISTRIBUTIONS
       Valiant::Filter::HtmlEscape undef
       Valiant::Filter::Lower undef
       Valiant::Filter::Numberize undef
+      Valiant::Filter::Template undef
       Valiant::Filter::Title undef
       Valiant::Filter::ToArray undef
       Valiant::Filter::Trim undef
@@ -4736,6 +4788,15 @@ DISTRIBUTIONS
       Valiant::Filter::With undef
       Valiant::Filterable undef
       Valiant::Filters undef
+      Valiant::HTML::Form undef
+      Valiant::HTML::FormBuilder undef
+      Valiant::HTML::FormBuilder::Checkbox undef
+      Valiant::HTML::FormBuilder::RadioButton undef
+      Valiant::HTML::FormTags undef
+      Valiant::HTML::SafeString undef
+      Valiant::HTML::TagBuilder undef
+      Valiant::HTML::Util::Collection undef
+      Valiant::HTML::Util::Collection::Item undef
       Valiant::I18N undef
       Valiant::I18N::Tag undef
       Valiant::Name undef
@@ -4793,7 +4854,8 @@ DISTRIBUTIONS
       ExtUtils::MakeMaker 0
       File::Spec 0
       FreezeThaw 0
-      Lingua::EN::Inflexion 0
+      HTML::Escape 0
+      Lingua::EN::Inflexion 0.002007
       Module::Runtime 0
       Moo 2.004004
       Role::Tiny::With 0
@@ -4801,6 +4863,7 @@ DISTRIBUTIONS
       String::CamelCase 0
       Sub::Util 0
       Text::Autoformat 0
+      URI 0
       namespace::autoclean 0
       overload 0
   Validate-Tiny-1.6

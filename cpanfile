@@ -11,3 +11,6 @@ requires 'Data::Sah';
 
 requires 'Type::Tiny::XS';
 requires 'Ref::Util::XS';
+requires 'Cpanel::JSON::XS';
+requires 'JSON::MaybeXS';
+
