@@ -16,7 +16,8 @@ die "no benchmark case $which"
 unshift @INC, $which;
 require BenchmarkSetup;
 
-cmpthese(-3 => Utils::get_benchmark_runners(
+cmpthese(-10 => Utils::get_benchmark_runners(
 	BenchmarkSetup->data,
 	BenchmarkSetup->participants,
 ));
+
