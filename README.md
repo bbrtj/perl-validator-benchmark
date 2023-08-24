@@ -9,6 +9,10 @@ These benchmarks don't (currently?) measure:
 
 Object construction is part of the benchmark, but can be skipped if certain validator implementation does not require it.
 
+## Example results
+
+(https://bbrtj.eu/blog/article/validation-frameworks-benchmark)
+
 ## Running the benchmark
 
 First, you have to install Carton for your perl and use it to install dependencies locally:
