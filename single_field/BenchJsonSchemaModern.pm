@@ -9,7 +9,8 @@ sub validate
 	return $self->evaluate($data, {
 		type => 'object',
 		required => ['a'],
-	});
+	})->valid;
 }
 
 1;
+

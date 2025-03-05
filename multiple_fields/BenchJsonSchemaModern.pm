@@ -16,7 +16,8 @@ sub validate
 			d => { type => 'string' },
 			e => { type => 'string' },
 		}
-	});
+	})->valid;
 }
 
 1;
+

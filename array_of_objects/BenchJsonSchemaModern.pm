@@ -22,7 +22,8 @@ sub validate
 				},
 			},
 		},
-	});
+	})->valid;
 }
 
 1;
+
