@@ -7,6 +7,12 @@ sub data
 	}
 }
 
+sub bad_data
+{
+	{
+	}
+}
+
 sub participants
 {
 	return qw(
@@ -21,6 +27,7 @@ sub participants
 		BenchValiant
 		BenchValidateTiny
 		BenchValidatorLivr
+		BenchWhelk
 	);
 }
 

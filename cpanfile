@@ -15,3 +15,5 @@ requires 'Cpanel::JSON::XS';
 requires 'JSON::MaybeXS';
 requires 'Class::XSAccessor';
 
+requires 'Test::Exception';
+

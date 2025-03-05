@@ -11,6 +11,17 @@ sub data
 	}
 }
 
+sub bad_data
+{
+	{
+		a => 'test1',
+		b => 'test2',
+		c => {},
+		d => 'test4',
+		e => 'test5',
+	}
+}
+
 sub participants
 {
 	return qw(
@@ -25,6 +36,7 @@ sub participants
 		BenchValiant
 		BenchValidateTiny
 		BenchValidatorLivr
+		BenchWhelk
 	);
 }
 
