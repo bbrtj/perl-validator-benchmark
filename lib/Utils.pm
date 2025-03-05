@@ -52,6 +52,9 @@ sub get_benchmark_runners
 			my $form = BenchValidatorLivr->new;
 			die unless $form->validate($data);
 		},
+		BenchWhelk => sub {
+			die unless BenchWhelk->validate($data);
+		},
 	);
 
 	my %out;
