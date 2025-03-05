@@ -7,7 +7,9 @@ These benchmarks don't (currently?) measure:
 - validation failure speed
 - compilation time overhead
 
-Object construction is part of the benchmark, but can be skipped if certain validator implementation does not require it.
+Object construction is part of the benchmark, but can be skipped if certain
+validator implementation does not require it or is built in a way that makes it
+persistent during its intended workflow.
 
 ## Example results
 
@@ -15,23 +17,23 @@ Object construction is part of the benchmark, but can be skipped if certain vali
 
 ## Running the benchmark
 
-First, you have to install Carton for your perl and use it to install dependencies locally:
+First, you have to install Carmel or Carton for your perl and use it to install dependencies locally:
 
 ```
-cpan Carton
-carton install
+cpan Carmel
+carmel install
 ```
 
 The benchmark is run one case at a time:
 
 ```
-carton exec ./benchmark.pl <case_name>
+carmel exec ./benchmark.pl <case_name>
 ```
 
 Results can be optionally filtered through `format.pl` script, which reduces horizontal size of the output:
 
 ```
-carton exec ./benchmark.pl <case_name> | ./format.pl
+carmel exec ./benchmark.pl <case_name> | ./format.pl
 ```
 
 ## Cases
@@ -59,7 +61,7 @@ We pass a single field `a`, which is an array reference of hash references. Ther
 ## Contributing
 
 Contributions are welcome! If you wish to contribute a new validator, follow these steps:
-1. Add your validator module into `cpanfile`. Run `carton install` to update `cpanfile.snapshot`
+1. Add your validator module into `cpanfile`. Run `carmel install` to update `cpanfile.snapshot`
 2. Add a new benchmark runner in `lib/Utils.pm`. Name your benchmark `Bench<name>`, `<name>` being module name without `::` separators
 3. Choose which benchmark case you would like to implement. Add your benchmark name into `BenchmarkSetup.pm` file in that directory (in `sub participants`)
 4. Create a file in that directory named `Bench<name>.pm`. Implement validation code in that file
