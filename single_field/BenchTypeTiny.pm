@@ -1,14 +1,14 @@
 package BenchTypeTiny;
 
 use Types::Standard qw(Dict Any);
+use feature 'state';
 
 sub validate
 {
 	my ($self, $data) = @_;
-
-	return (
-		Dict[a => Any]
-	)->check($data);
+	state $dict = Dict[a => Any];
+	
+	return $dict->check($data);
 }
 
 1;

@@ -40,6 +40,9 @@ sub get_benchmark_runners
 		BenchTypeTiny => sub {
 			die unless BenchTypeTiny->validate($data);
 		},
+		BenchTypeTiny2 => sub {
+			die unless BenchTypeTiny2->validate($data);
+		},
 		BenchValidateTiny => sub {
 			die unless BenchValidateTiny->valid($data)->{success};
 		},
