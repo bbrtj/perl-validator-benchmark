@@ -17,13 +17,22 @@ die "no benchmark case $which"
 unshift @INC, $which;
 require BenchmarkSetup;
 
-my $cases = Utils::get_benchmark_runners(
+my $cases_good = Utils::get_benchmark_runners(
+	BenchmarkSetup->data,
+	BenchmarkSetup->participants,
+);
+
+foreach my $case_name (sort keys %$cases_good) {
+	lives_ok sub { $cases_good->{$case_name}->() }, "good $case_name ok";
+}
+
+my $cases_bad = Utils::get_benchmark_runners(
 	BenchmarkSetup->bad_data,
 	BenchmarkSetup->participants,
 );
 
-foreach my $case_name (sort keys %$cases) {
-	dies_ok sub { $cases->{$case_name}->() }, "$case_name ok";
+foreach my $case_name (sort keys %$cases_bad) {
+	dies_ok sub { $cases_bad->{$case_name}->() }, "bad $case_name ok";
 }
 
 done_testing;
