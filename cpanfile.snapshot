@@ -3068,7 +3068,6 @@ DISTRIBUTIONS
     requirements:
       ExtUtils::MakeMaker 0
       Mail::Address 0
-      Net::DNS 0
       Scalar::Util 0
       Test::More 0
       perl 5.006
@@ -4008,6 +4007,24 @@ DISTRIBUTIONS
       stable 0.031
       strictures 2
       warnings 0
+  JSON-Schema-Validate-v0.6.0
+    pathname: J/JD/JDEGUEST/JSON-Schema-Validate-v0.6.0.tar.gz
+    provides:
+      JSON::Schema::Validate 0.006000
+      JSON::Schema::Validate::Error 0.006000
+    requirements:
+      DateTime 0
+      DateTime::Duration 0
+      Encode 0
+      ExtUtils::MakeMaker 0
+      JSON 0
+      List::Util 0
+      Scalar::Util 0
+      perl 5.016000
+      strict 0
+      utf8 0
+      vars 0
+      warnings 0
   JavaScript-QuickJS-0.21
     pathname: F/FE/FELIPE/JavaScript-QuickJS-0.21.tar.gz
     provides:
@@ -4251,7 +4268,6 @@ DISTRIBUTIONS
       CPAN::Meta 0
       CPAN::Meta::Prereqs 0
       Data::Dumper 0
-      ExtUtils::CBuilder 0
       Module::Build 0.38
       Scalar::Util 0
       Term::ANSIColor 0
@@ -5221,7 +5237,7 @@ DISTRIBUTIONS
       Moose::Meta::Attribute::Custom::Trait::ENV 0.02
       MooseX::Attribute::ENV 0.02
     requirements:
-      ExtUtils::MakeMaker 7.70
+      ExtUtils::MakeMaker 7.76
       Moose 0.48
       Test::More 0
       perl 5.008006
@@ -5398,144 +5414,6 @@ DISTRIBUTIONS
       perl 5.006
       strict 0
       warnings 0
-  Net-DNS-1.50
-    pathname: N/NL/NLNETLABS/Net-DNS-1.50.tar.gz
-    provides:
-      Net::DNS 1.50
-      Net::DNS::Domain 2002
-      Net::DNS::DomainName 2005
-      Net::DNS::DomainName1035 2005
-      Net::DNS::DomainName2535 2005
-      Net::DNS::Header 2002
-      Net::DNS::Mailbox 2002
-      Net::DNS::Mailbox1035 2002
-      Net::DNS::Mailbox2535 2002
-      Net::DNS::Nameserver 2002
-      Net::DNS::Packet 2003
-      Net::DNS::Parameters 2002
-      Net::DNS::Question 2002
-      Net::DNS::RR 2003
-      Net::DNS::RR::A 2003
-      Net::DNS::RR::AAAA 2003
-      Net::DNS::RR::AFSDB 2002
-      Net::DNS::RR::AMTRELAY 2003
-      Net::DNS::RR::APL 2003
-      Net::DNS::RR::APL::Item 2003
-      Net::DNS::RR::CAA 2003
-      Net::DNS::RR::CDNSKEY 2003
-      Net::DNS::RR::CDS 2003
-      Net::DNS::RR::CERT 2002
-      Net::DNS::RR::CNAME 2003
-      Net::DNS::RR::CSYNC 2003
-      Net::DNS::RR::DELEG 2003
-      Net::DNS::RR::DHCID 2003
-      Net::DNS::RR::DNAME 2003
-      Net::DNS::RR::DNSKEY 2003
-      Net::DNS::RR::DS 2003
-      Net::DNS::RR::DSYNC 2003
-      Net::DNS::RR::EUI48 2003
-      Net::DNS::RR::EUI64 2003
-      Net::DNS::RR::GPOS 2003
-      Net::DNS::RR::HINFO 2003
-      Net::DNS::RR::HIP 2003
-      Net::DNS::RR::HTTPS 2002
-      Net::DNS::RR::IPSECKEY 2003
-      Net::DNS::RR::ISDN 2002
-      Net::DNS::RR::KEY 2002
-      Net::DNS::RR::KX 2003
-      Net::DNS::RR::L32 2003
-      Net::DNS::RR::L64 2003
-      Net::DNS::RR::LOC 2003
-      Net::DNS::RR::LP 2003
-      Net::DNS::RR::MB 2002
-      Net::DNS::RR::MG 2002
-      Net::DNS::RR::MINFO 2002
-      Net::DNS::RR::MR 2002
-      Net::DNS::RR::MX 2002
-      Net::DNS::RR::NAPTR 2003
-      Net::DNS::RR::NID 2003
-      Net::DNS::RR::NS 2003
-      Net::DNS::RR::NSEC 2002
-      Net::DNS::RR::NSEC3 2003
-      Net::DNS::RR::NSEC3PARAM 2003
-      Net::DNS::RR::NULL 2002
-      Net::DNS::RR::OPENPGPKEY 2003
-      Net::DNS::RR::OPT 2005
-      Net::DNS::RR::OPT::CHAIN 2005
-      Net::DNS::RR::OPT::CLIENT_SUBNET 2005
-      Net::DNS::RR::OPT::COOKIE 2005
-      Net::DNS::RR::OPT::DAU 2005
-      Net::DNS::RR::OPT::DHU 2005
-      Net::DNS::RR::OPT::EXPIRE 2005
-      Net::DNS::RR::OPT::EXTENDED_ERROR 2005
-      Net::DNS::RR::OPT::KEY_TAG 2005
-      Net::DNS::RR::OPT::N3U 2005
-      Net::DNS::RR::OPT::NSID 2005
-      Net::DNS::RR::OPT::PADDING 2005
-      Net::DNS::RR::OPT::REPORT_CHANNEL 2005
-      Net::DNS::RR::OPT::TCP_KEEPALIVE 2005
-      Net::DNS::RR::OPT::ZONEVERSION 2005
-      Net::DNS::RR::PTR 2002
-      Net::DNS::RR::PX 2003
-      Net::DNS::RR::RESINFO 2003
-      Net::DNS::RR::RP 2002
-      Net::DNS::RR::RRSIG 2003
-      Net::DNS::RR::RT 2003
-      Net::DNS::RR::SIG 2003
-      Net::DNS::RR::SMIMEA 2003
-      Net::DNS::RR::SOA 2002
-      Net::DNS::RR::SPF 2003
-      Net::DNS::RR::SRV 2003
-      Net::DNS::RR::SSHFP 2003
-      Net::DNS::RR::SVCB 2003
-      Net::DNS::RR::TKEY 2003
-      Net::DNS::RR::TLSA 2003
-      Net::DNS::RR::TSIG 2003
-      Net::DNS::RR::TXT 2003
-      Net::DNS::RR::URI 2003
-      Net::DNS::RR::X25 2002
-      Net::DNS::RR::ZONEMD 2003
-      Net::DNS::Resolver 2009
-      Net::DNS::Resolver::Base 2011
-      Net::DNS::Resolver::MSWin32 2002
-      Net::DNS::Resolver::Recurse 2002
-      Net::DNS::Resolver::UNIX 2007
-      Net::DNS::Resolver::android 2007
-      Net::DNS::Resolver::cygwin 2002
-      Net::DNS::Resolver::os2 2007
-      Net::DNS::Resolver::os390 2007
-      Net::DNS::Text 2002
-      Net::DNS::Update 2003
-      Net::DNS::ZoneFile 2002
-      Net::DNS::ZoneFile::Generator 2002
-      Net::DNS::ZoneFile::Text 2002
-    requirements:
-      Carp 1.1
-      Config 0
-      Digest::HMAC 1.03
-      Digest::MD5 2.37
-      Digest::SHA 5.23
-      Encode 2.26
-      Exporter 5.63
-      ExtUtils::MakeMaker 6.48
-      File::Spec 3.29
-      Getopt::Long 2.43
-      IO::File 1.14
-      IO::Select 1.17
-      IO::Socket 1.3
-      IO::Socket::IP 0.38
-      MIME::Base64 3.07
-      PerlIO 1.05
-      Scalar::Util 1.19
-      Socket 1.81
-      Time::Local 1.19
-      base 2.13
-      constant 1.17
-      integer 1
-      overload 1.06
-      perl 5.008009
-      strict 1.03
-      warnings 1.0501
   Net-HTTP-6.23
     pathname: O/OA/OALDERS/Net-HTTP-6.23.tar.gz
     provides:

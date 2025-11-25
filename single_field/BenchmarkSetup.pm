@@ -28,6 +28,7 @@ sub participants
 		BenchValidateTiny
 		BenchValidatorLivr
 		BenchWhelk
+		BenchJsonSchemaValidate
 	);
 }
 

@@ -9,7 +9,7 @@ use Test::More;
 use Test::Exception;
 
 my $which = shift;
-die "usage: benchmark.pl <benchmark_name>"
+die "usage: test.pl <benchmark_name>"
 	unless $which;
 die "no benchmark case $which"
 	unless -d $which;

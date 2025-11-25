@@ -55,6 +55,9 @@ sub get_benchmark_runners
 		BenchWhelk => sub {
 			die unless BenchWhelk->validate($data);
 		},
+		BenchJsonSchemaValidate => sub {
+			die unless BenchJsonSchemaValidate->validate($data);
+		},
 	);
 
 	my %out;
