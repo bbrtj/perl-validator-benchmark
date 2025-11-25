@@ -2,11 +2,12 @@ package BenchJsonSchemaModern;
 
 use parent 'JSON::Schema::Modern';
 
-sub validate
+sub new
 {
-	my ($self, $data) = @_;
+	my ($class, @args) = @_;
 
-	return $self->evaluate($data, {
+	my $self = $class->SUPER::new(@args);
+	$self->add_schema('/bench' => {
 		type => 'object',
 		required => ['a'],
 		properties => {
@@ -22,7 +23,16 @@ sub validate
 				},
 			},
 		},
-	})->valid;
+	});
+
+	return $self
+}
+
+sub validate
+{
+	my ($self, $data) = @_;
+
+	return $self->evaluate($data, '/bench')->valid;
 }
 
 1;
