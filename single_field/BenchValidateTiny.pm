@@ -1,18 +1,28 @@
 package BenchValidateTiny;
 
-use Validate::Tiny ':all';
+use parent 'Validate::Tiny';
 
-my $rules = {
-	fields => [qw(a)],
-	checks => [
-		[qw(a)] => is_required(),
-	],
-};
+sub new
+{
+	my ($class) = @_;
+
+	my $self = $class->SUPER::new;
+	$self->{rules} = {
+		fields => [qw(a)],
+		checks => [
+			[qw(a)] => $class->is_required(),
+		],
+	};
+
+	return $self;
+}
 
 sub valid
 {
 	my ($self, $data) = @_;
-	return validate($data, $rules);
+
+	$self->check($data, $self->{rules});
+	return $self->success;
 }
 
 1;

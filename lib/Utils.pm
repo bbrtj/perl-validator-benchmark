@@ -3,75 +3,18 @@ package Utils;
 use strict;
 use warnings;
 
-sub get_benchmark_runners
+sub prepare_benchmark
 {
-	my ($data, @classes) = @_;
+	my $runners = BenchmarkSetup->get_runners(shift);
 
-	my %runners = (
-		BenchFormToolkit => sub {
-			my $form = BenchFormToolkit->new;
-			$form->fill_hash($data);
-			die if $form->has_errors;
-		},
-		BenchFormTiny => sub {
-			my $form = BenchFormTiny->new;
-			$form->set_input($data);
-			die unless $form->valid;
-		},
-		BenchDataMuForm => sub {
-			my $form = BenchDataMuForm->new;
-			die unless $form->check(data => $data);
-		},
-		BenchDataSah => sub {
-			die unless BenchDataSah->validate($data);
-		},
-		BenchHtmlFormHandler => sub {
-			my $form = BenchHtmlFormHandler->new;
-			$form->process(params => $data);
-			die unless $form->validated;
-		},
-		BenchJsonSchemaTiny => sub {
-			die unless BenchJsonSchemaTiny->validate($data)->{valid};
-		},
-		BenchJsonSchemaModern => sub {
-			my $form = BenchJsonSchemaModern->new;
-			die unless $form->validate($data);
-		},
-		BenchTypeTiny => sub {
-			die unless BenchTypeTiny->validate($data);
-		},
-		BenchValidateTiny => sub {
-			die unless BenchValidateTiny->valid($data)->{success};
-		},
-		BenchValiant => sub {
-			my $form = BenchValiant->new($data);
-			$form->validate;
-			die unless $form->valid;
-		},
-		BenchValidatorLivr => sub {
-			my $form = BenchValidatorLivr->new;
-			die unless $form->validate($data);
-		},
-		BenchWhelk => sub {
-			die unless BenchWhelk->validate($data);
-		},
-		BenchJsonSchemaValidate => sub {
-			die unless BenchJsonSchemaValidate->validate($data);
-		},
-	);
-
-	my %out;
-	for my $class (@classes) {
-		die "unknown benchmark class: $class"
-			unless exists $runners{$class};
-
+	for my $class (keys %{$runners}) {
 		my $res = eval "require $class; 1;";
 		die "error loading $class: $@" unless $res;
 
-		$out{$class =~ s/^Bench//r} = $runners{$class};
+		$runners->{$class =~ s/^Bench//r} = delete $runners->{$class};
 	}
 
-	return \%out;
+	return $runners;
 }
 
 1;

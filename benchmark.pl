@@ -22,9 +22,8 @@ my $bench = Dumbbench->new(
 	initial_runs => BenchmarkSetup->initial_runs,
 );
 
-my $runners = Utils::get_benchmark_runners(
+my $runners = Utils::prepare_benchmark(
 	BenchmarkSetup->data,
-	BenchmarkSetup->participants,
 );
 
 $bench->add_instances(

@@ -3,10 +3,11 @@ package BenchDataSah;
 use v5.12;
 use Data::Sah qw(gen_validator);
 
-sub validate
+sub new
 {
-	my ($self, $data) = @_;
-	state $validator = gen_validator([
+	my ($class) = @_;
+
+	my $validator = gen_validator([
 		'hash*',
 		req_keys => ['a'],
 		keys => {
@@ -14,8 +15,15 @@ sub validate
 		},
 	]);
 
+	return bless \$validator, $class;
+}
 
-	return $validator->($data);
+sub validate
+{
+	my ($self, $data) = @_;
+
+	return ${$self}->($data);
 }
 
 1;
+

@@ -1,18 +1,23 @@
 package BenchJsonSchemaTiny;
 
-use v5.12;
 use JSON::Schema::Tiny qw(evaluate);
+
+sub new
+{
+	my ($class) = @_;
+
+	my $rules = {
+		type => 'object',
+		required => ['a'],
+	};
+	return bless {rules => $rules}, $class;
+}
 
 sub validate
 {
 	my ($self, $data) = @_;
 
-	state $schema = {
-		type => 'object',
-		required => ['a'],
-	};
-
-	return evaluate($data, $schema);
+	return evaluate($data, $self->{rules})->{valid};
 }
 
 1;

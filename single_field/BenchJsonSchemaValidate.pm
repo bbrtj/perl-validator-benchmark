@@ -1,18 +1,15 @@
 package BenchJsonSchemaValidate;
 
-use v5.12;
-use JSON::Schema::Validate;
+use parent 'JSON::Schema::Validate';
 
-sub validate
+sub new
 {
-	my ($self, $data) = @_;
+	my ($class) = @_;
 
-	state $object = JSON::Schema::Validate->new({
+	return $class->SUPER::new({
 		type => 'object',
 		required => ['a'],
 	})->compile;
-
-	return $object->validate($data);
 }
 
 1;
