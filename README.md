@@ -40,6 +40,12 @@ We pass a single field `a`, which is required and can be any scalar value.
 
 *Rationale*: we measure the runtime overhead each system has. The validation rule here is as easy as it can be on purpose. Results of this benchmark can be used to decide whether a validator should be used for simple data validation cases that will run very frequently.
 
+### build_object
+
+The same as `single_field`, but we do not cache the validation object and let it rebuild from scratch.
+
+*Rationale*: we measure the object construction overhead for each system. Some systems may "cheat" this benchmark by pinning validation data to the class and not the object. Results of this benchmark can be used to determine which framework is faster in a scenario where the validation object cannot be kept in memory for long-term reuse.
+
 ### multiple_fields
 
 We pass five fields `a`, `b`, `c`, `d`, `e`, all of which are required and strings.
