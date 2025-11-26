@@ -30,12 +30,6 @@ The benchmark is run one case at a time:
 carmel exec ./benchmark.pl <case_name>
 ```
 
-Results can be optionally filtered through `format.pl` script, which reduces horizontal size of the output:
-
-```
-carmel exec ./benchmark.pl <case_name> | ./format.pl
-```
-
 ## Cases
 
 Here is the list of current benchmark cases with rationales behind them:

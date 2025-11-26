@@ -41,5 +41,10 @@ sub participants
 	);
 }
 
+sub initial_runs
+{
+	return 100;
+}
+
 1;
 

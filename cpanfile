@@ -18,4 +18,5 @@ requires 'JSON::MaybeXS';
 requires 'Class::XSAccessor';
 
 requires 'Test::Exception';
+requires 'Dumbbench';
 

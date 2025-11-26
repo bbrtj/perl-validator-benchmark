@@ -32,5 +32,10 @@ sub participants
 	);
 }
 
+sub initial_runs
+{
+	return 200;
+}
+
 1;
 
