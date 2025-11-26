@@ -3,6 +3,8 @@ package BenchmarkSetup;
 use strict;
 use warnings;
 
+use parent 'BenchmarkSetupBase';
+
 sub data
 {
 	return {
@@ -42,25 +44,6 @@ sub bad_data
 			'this is not an object'
 		]]
 	}
-}
-
-sub participants
-{
-	return qw(
-		BenchJsonSchemaModern
-		BenchDataMuForm
-		BenchDataSah
-		BenchFormTiny
-		BenchFormToolkit
-		BenchHtmlFormHandler
-		BenchJsonSchemaTiny
-		BenchTypeTiny
-		BenchValiant
-		BenchValidateTiny
-		BenchValidatorLivr
-		BenchWhelk
-		BenchJsonSchemaValidate
-	);
 }
 
 sub initial_runs

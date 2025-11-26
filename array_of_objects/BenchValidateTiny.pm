@@ -1,51 +1,89 @@
 package BenchValidateTiny;
 
-use Validate::Tiny ':all';
-use Types::Standard qw(Str Int);
+use parent 'Validate::Tiny';
 
-my $rules2 = {
-	fields => [qw(b c)],
-	checks => [
-		[qw(b c)] => is_required(),
+sub new
+{
+	my ($class) = @_;
 
-		b => sub {
-			Int->validate(shift);
-		},
-		c => sub {
-			Str->validate(shift);
-		},
-	],
-};
+	my $self = $class->SUPER::new;
 
-my $rules = {
-	fields => [qw(a)],
-	checks => [
-		[qw(a)] => is_required(),
+	my $rules_nested = {
+		fields => [qw(b c)],
+		checks => [
+			[qw(b c)] => $self->is_required(),
 
-		a => sub {
-			my $value = shift;
+			b => Validate::Tiny::is_like(qr{^-?\d+$}, 'not an int'),
+			c => sub {
+				return 'not a string' if ref shift;
+			},
+		],
+	};
 
-			return 'not an array'
-				unless ref $value eq 'ARRAY';
+	$self->{nested_rules} = BenchValidateTinyNested->new;
+	$self->{rules} = {
+		fields => [qw(a)],
+		checks => [
+			[qw(a)] => $self->is_required(),
 
-			for my $el ($value->@*) {
-				return 'not a hash'
-					unless ref $el eq 'HASH';
+			a => sub {
+				my $value = shift;
 
-				my $validated = validate($el, $rules2);
-				return $validated->{error}
-					unless $validated->{success};
-			}
+				return 'not an array'
+					unless ref $value eq 'ARRAY';
 
-			return;
-		},
-	],
-};
+				for my $el ($value->@*) {
+					return 'bad nested object'
+						unless $self->{nested_rules}->valid($el);
+				}
+
+				return;
+			},
+		],
+	};
+
+	return $self;
+}
 
 sub valid
 {
 	my ($self, $data) = @_;
-	return validate($data, $rules);
+
+	$self->check($data, $self->{rules});
+	return $self->success;
+}
+
+package BenchValidateTinyNested;
+
+use parent 'Validate::Tiny';
+
+sub new
+{
+	my ($class) = @_;
+
+	my $self = $class->SUPER::new;
+
+	$self->{rules} = {
+		fields => [qw(b c)],
+		checks => [
+			[qw(b c)] => $self->is_required(),
+
+			b => Validate::Tiny::is_like(qr{^-?\d+$}, 'not an int'),
+			c => sub {
+				return 'not a string' if ref shift;
+			},
+		],
+	};
+
+	return $self;
+}
+
+sub valid
+{
+	my ($self, $data) = @_;
+
+	$self->check($data, $self->{rules});
+	return $self->success;
 }
 
 1;

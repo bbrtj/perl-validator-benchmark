@@ -1,22 +1,32 @@
 package BenchValidateTiny;
 
-use Validate::Tiny ':all';
-use Types::Standard qw(Str);
+use parent 'Validate::Tiny';
 
-my $rules = {
-	fields => [qw(a b c d e)],
-	checks => [
-		[qw(a b c d e)] => is_required(),
-		[qw(a b c d e)] => sub {
-			Str->validate(shift)
-		}
-	],
-};
+sub new
+{
+	my ($class) = @_;
+
+	my $self = $class->SUPER::new;
+	$self->{rules} = {
+		fields => [qw(a b c d e)],
+		checks => [
+			[qw(a b c d e)] => $self->is_required(),
+			[qw(a b c d e)] => sub {
+				# already defined by is_required
+				return 'not a string' if ref shift;
+			}
+		],
+	};
+
+	return $self;
+}
 
 sub valid
 {
 	my ($self, $data) = @_;
-	return validate($data, $rules);
+
+	$self->check($data, $self->{rules});
+	return $self->success;
 }
 
 1;

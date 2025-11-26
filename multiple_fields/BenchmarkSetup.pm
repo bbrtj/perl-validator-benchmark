@@ -1,5 +1,10 @@
 package BenchmarkSetup;
 
+use strict;
+use warnings;
+
+use parent 'BenchmarkSetupBase';
+
 sub data
 {
 	{
@@ -20,30 +25,6 @@ sub bad_data
 		d => 'test4',
 		e => 'test5',
 	}
-}
-
-sub participants
-{
-	return qw(
-		BenchJsonSchemaModern
-		BenchDataMuForm
-		BenchDataSah
-		BenchFormTiny
-		BenchFormToolkit
-		BenchHtmlFormHandler
-		BenchJsonSchemaTiny
-		BenchTypeTiny
-		BenchValiant
-		BenchValidateTiny
-		BenchValidatorLivr
-		BenchWhelk
-		BenchJsonSchemaValidate
-	);
-}
-
-sub initial_runs
-{
-	return 100;
 }
 
 1;

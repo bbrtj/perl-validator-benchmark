@@ -1,13 +1,12 @@
 package BenchWhelk;
 
-use feature 'state';
 use Whelk::Schema;
 
-sub validate
+sub new
 {
-	my ($self, $data) = @_;
+	my ($class) = @_;
 
-	state $validator = Whelk::Schema->build(
+	my $validator = Whelk::Schema->build(
 		{
 			type => 'object',
 			properties => {
@@ -30,7 +29,14 @@ sub validate
 		}
 	);
 
-	return !defined $validator->inhale($data);
+	return bless \$validator, $class;
+}
+
+sub validate
+{
+	my ($self, $data) = @_;
+
+	return !defined ${$self}->inhale($data);
 }
 
 1;

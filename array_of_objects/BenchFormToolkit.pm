@@ -66,23 +66,16 @@ package FormToolkitInner {
 	__PACKAGE__->meta->make_immutable();
 }
 
-use feature 'state';
 use Moose;
 extends 'Form::Toolkit::Form';
 
 sub build_fields {
 	my ($self) = @_;
-	state $fields = do {
-		my $subform = FormToolkitInner->new;
-		[
-			$self->add_field('ArrayOfObjects', 'a')
-				->add_role('Mandatory')
-				->add_role('Subform', { subform => $subform }),
-		]
-	};
 
-	$self->fields->@* = @$fields;
-	$self->clear; # since we reuse same field objects, clear the form
+	$self->add_field('ArrayOfObjects', 'a')
+		->add_role('Mandatory')
+		->add_role('Subform', { subform => FormToolkitInner->new });
 }
 
 __PACKAGE__->meta->make_immutable();
+

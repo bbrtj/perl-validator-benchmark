@@ -1,6 +1,5 @@
 package BenchDataSah;
 
-use v5.12;
 use Data::Sah qw(gen_validator);
 
 sub new
